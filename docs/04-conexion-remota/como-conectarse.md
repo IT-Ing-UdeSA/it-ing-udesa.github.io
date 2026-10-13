@@ -1,3 +1,0 @@
-# Cómo conectarse
-
-**TODO**
