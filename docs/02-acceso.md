@@ -11,6 +11,13 @@ Tanto para el acceso presencial como para el remoto, las credenciales son el usu
 La primera vez que uno se loguea a una máquina puede tardar más de lo esperado.
 ```
 
+## Horarios de acceso remoto
+
+| Días | Horario |
+|---|---|
+| Lunes a viernes | 22:00hs a 07:00hs |
+| Sábados, domingos y feriados | Todo el día |
+
 ## VPN
 
 Para poder acceder a la red de la universidad, es necesario que descarguen un cliente para conectarse a la VPN (Virtual Private Network) de la universidad.

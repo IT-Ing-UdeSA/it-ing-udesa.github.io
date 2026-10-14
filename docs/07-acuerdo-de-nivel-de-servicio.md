@@ -73,12 +73,13 @@ remoto o de un aula) tienen prioridad sobre el resto de las solicitudes.
 - **Máquinas físicas**: se mantienen operativas durante el horario de
   clases. Reinstalaciones o reimágenes se comunican con anticipación
   cuando es posible
-- **Corte de conexiones y reinicio diario**: de lunes a viernes (salvo
-  feriados), a las 06:50 se muestra un aviso en la terminal, a las 07:00 se
-  cortan las conexiones remotas y a las 07:30 se reinician todas las
-  máquinas. Lo que esté corriendo dentro de tmux sigue vivo después de las
-  07:00, pero todo proceso se pierde a las 07:30. Guardar resultados y
-  checkpoints en el home o en `~/scratch` antes de esa hora.
+- **Acceso remoto**: tiene un horario fijo, descripto en
+  [Horarios de acceso remoto](02-acceso.md#horarios-de-acceso-remoto).
+- **Reinicio diario**: de lunes a viernes (salvo feriados), a las 07:30 se
+  reinician todas las máquinas. Lo que esté corriendo dentro de tmux sigue
+  vivo después del corte de las 07:00, pero todo proceso se pierde a las
+  07:30. Guardar resultados y checkpoints en el home o en `~/scratch` antes
+  de esa hora.
 - **Ventanas de mantenimiento programado**: El primero de cada mes durante
   horario nocturno
 - **Actualizaciones de seguridad**: pueden aplicarse fuera de las

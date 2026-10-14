@@ -15,6 +15,8 @@ Ante cualquier problema o solicitud de software específico, enviar un mail a _s
 
 ## Disponibilidad del laboratorio
 
+Ocupación del aula S004. El acceso remoto tiene su propio horario: ver [Horarios de acceso remoto](02-acceso.md#horarios-de-acceso-remoto).
+
 ```{raw} html
 <iframe
   src="https://calendar.google.com/calendar/embed?src=c_5c48e43e289b1191467cda48d68ca21a0614f6a404fd7bcaec66b240e4d06d77%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires&mode=WEEK&hl=es&showPrint=0&showTabs=1&showCalendars=0&showTitle=0"
