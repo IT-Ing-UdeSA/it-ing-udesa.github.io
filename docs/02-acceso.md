@@ -1,8 +1,15 @@
 # Acceso
 
 Los usuarios con acceso a los laboratorios son aquellos que se encuentran:
-- Cursando materias de la _Escuela de Ingeniería_
+- Cursando alguna de estas materias de la _Escuela de Ingeniería_:
+  - Principios de la Robótica Autónoma
+  - Visión Artificial
+  - Procesamiento del Lenguaje Natural
+  - Bioinformática
+  - Taller de Proyecto Final
 - Realizando la tesis de grado
+
+Estudiantes, docentes e investigadores pueden solicitar acceso completando el [formulario de solicitud de acceso](https://forms.gle/iLZS8ugCkU3pDpR18).
 
 Tanto para el acceso presencial como para el remoto, las credenciales son el usuario y la contraseña del mail "@udesa.edu.ar".
 
@@ -17,6 +24,8 @@ La primera vez que uno se loguea a una máquina puede tardar más de lo esperado
 |---|---|
 | Lunes a viernes | 22:00hs a 07:00hs |
 | Sábados, domingos y feriados | Todo el día |
+
+De lunes a viernes, las máquinas se reinician al comienzo del día (07:30hs).
 
 ## VPN
 
