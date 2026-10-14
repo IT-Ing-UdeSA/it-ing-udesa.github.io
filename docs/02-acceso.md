@@ -1,46 +1,39 @@
 # Acceso
 
 Los usuarios con acceso a los laboratorios son aquellos que se encuentran:
-- Cursando materias de la _Escuela de Ingenieria_
+- Cursando materias de la _Escuela de Ingeniería_
 - Realizando la tesis de grado
 
 Tanto para el acceso presencial como para el remoto, las credenciales son el usuario y la contraseña del mail "@udesa.edu.ar".
 
 
 ```{warning}
-La primera vez que uno se loguea a una maquina puede tardar mas de lo esperado.
+La primera vez que uno se loguea a una máquina puede tardar más de lo esperado.
 ```
+
+## VPN
 
 Para poder acceder a la red de la universidad, es necesario que descarguen un cliente para conectarse a la VPN (Virtual Private Network) de la universidad.
 
-## 1. VPN
-
 ### Clientes soportados
 
-- Forticlient 7.4 https://www.fortinet.com/lat/support/product-downloads
-- Openfortivpn +1.23
+- openfortivpn (Linux)
+- FortiClient VPN (Linux y Windows)
 
-Con ambas formas van a tener que utilizar sus credenciales institucionales.
-
-### 1.1. openfortivpn
+### openfortivpn
 
 1. Descargar openfortivpn (versión 1.23 o superior).
-
-   `<PLACEHOLDER: comando de instalación (apt install openfortivpn) y cómo verificar la versión instalada (openfortivpn --version)>`
 
 2. Conectarse corriendo:
 
    ```
-   sudo openfortivpn gateway.udesa.edu.ar:10443 -u <usuario> --saml-login
+   sudo openfortivpn gateway.udesa.edu.ar:443 -u <usuario> --saml-login
    ```
 
-   Al correr el comando, se deberia abrir el navegador con una interfaz para loguearse.
+   Al correr el comando, se debería abrir el navegador con una interfaz para loguearse.
 
 
-
-
-
-### 1.2. FortiClient VPN
+### FortiClient VPN
 
 1. Descargar FortiClient VPN 7.4 desde https://www.fortinet.com/lat/support/product-downloads e instalarlo.
 
@@ -74,30 +67,25 @@ Menú para agregar una nueva conexión.
 Configuración de la conexión.
 ```
 
+5. Elegir **UdeSA VPN** en **VPN Name** y hacer click en **SAML Login**. Se abre una ventana para loguearse con las credenciales institucionales.
 
-## 2. Acceso remoto por SSH
+```{figure} _static/img/vpn/forticlient_4.png
+:alt: Pantalla principal de FortiClient VPN con el botón SAML Login
 
-### Conexión
+Conexión con SAML Login.
+```
+
+
+## Acceso remoto por SSH
 
 Una vez conectados a la VPN, desde una terminal con `ssh` instalado, correr
 
 ```
-ssh sruberto@labs004.udesa.edu.ar
+ssh <usuario>@labs004.udesa.edu.ar
 ```
 
-Una vez ejecutado el comando, van a ser conectados directamente a una maquina del laboratorio. 
+Una vez ejecutado el comando, van a ser conectados directamente a una máquina del laboratorio. Luego, cada conexión sucesiva los va a asignar a la misma máquina, para que puedan reutilizar los datos que usen en el disco local.
 
-Por cada conexion sucesiva, se los va a pinnear a la misma maquina para que puedan reutilizar los datos que usen en el disco local.
+Cada usuario puede tener hasta 2 conexiones simultáneas al laboratorio. `ssh`, `scp`, `sftp` y `rsync` cuentan cada uno como una conexión.
 
-
-
-### Interfaz gráfica (X11 forwarding)
-Una de las capacidades de la conexion por SSH es renderizar una interfaz grafica dentro de la maquina y visualizar en la maquina local. Para ello, deben conectarse como:
-
-```
-ssh -XYC <usuario>@labs004.udesa.edu.ar
-```
-
-### SSH keys
-
-`<PLACEHOLDER: cómo generar un par de claves (ssh-keygen), cómo copiar la clave pública al laboratorio (ssh-copy-id) y cómo usarla para no ingresar la contraseña en cada conexión>`
+Para copiar archivos y usar aplicaciones gráficas por SSH, ver [Tips de SSH](03-tips-ssh.md).

@@ -6,11 +6,11 @@
 </div>
 ```
 
-Bienvenidos a la wiki del laboratorio S004 de la **Escuela de Ingenieria**!
+¡Bienvenidos a la wiki del laboratorio S004 de la **Escuela de Ingeniería**!
 
 ```{warning} 
-Este proyecto se encuentra en una fase **experimental**. Es posible que hayan problemas tanto para el acceso a las maquinas de manera fisica o remota, como para correr algun tipo de software. 
-Ante cualquier problema o solicitud de software especifico, enviar un mail a _soporte-s004@udesa.edu.ar_
+Este proyecto se encuentra en una fase **experimental**. Es posible que haya problemas tanto para el acceso a las máquinas de manera física o remota, como para correr algún tipo de software. 
+Ante cualquier problema o solicitud de software específico, enviar un mail a _soporte-s004@udesa.edu.ar_
 ```
 
 ## Disponibilidad del laboratorio
@@ -31,8 +31,10 @@ Ante cualquier problema o solicitud de software especifico, enviar un mail a _so
 
 01-que-es-este-laboratorio
 02-acceso
-03-almacenamiento
-04-software
-05-consideraciones-de-uso
-06-acuerdo-de-nivel-de-servicio
+03-tips-ssh
+04-almacenamiento
+05-software
+06-consideraciones-de-uso
+07-acuerdo-de-nivel-de-servicio
+08-preguntas-frecuentes
 ```
